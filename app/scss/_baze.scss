@@ -1,0 +1,83 @@
+body{
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+html{
+  font-size: $font-size; // for REM
+}
+
+.main-content,
+.header,
+.footer{
+  @include clear-fix();
+}
+
+p{
+  margin: 0 0 $gap/2;
+}
+
+
+a{
+  text-decoration: underline;
+  color: $color;
+  a:hover{
+    color: $hover-link;
+    text-decoration: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  margin: 0;
+}
+
+img,
+media{
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+ul,
+menu,
+dir,
+figure{
+  padding: 0;
+  margin: 0;
+  display: block;
+  list-style-type: disc;
+}
+
+label{
+  font-weight: normal;
+  display: block;
+  text-align: left;
+}
+
+li{
+  list-style-position: inside;
+  list-style: none;
+}
+
+body{
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
+  &:focus{
+    outline: none;
+  }
+}
+
+footer {
+  margin-top: auto;
+}

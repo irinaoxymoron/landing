@@ -1,0 +1,58 @@
+/* @import must be at top of file, otherwise CSS will not work */
+/*
+@font-face {font-family: 'HelveticaNeueLTStd-Bd';src: url('../fonts/Helvetica/3387D5_0_0.eot');src: url('../fonts/Helvetica/3387D5_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/Helvetica/3387D5_0_0.woff2') format('woff2'),url('../fonts/Helvetica/3387D5_0_0.woff') format('woff'),url('../fonts/Helvetica/3387D5_0_0.ttf') format('truetype');}
+*/
+
+@font-face {
+  font-family: 'fontawesome';
+  src: url('../fonts/fontawesome.woff2') format('woff2'), url('../fonts/fontawesome.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'georgia-bold';
+  src: url('../fonts/georgia-bold.woff2') format('woff2'), url('../fonts/georgia-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'helvetica-neue-bold';
+  src: url('../fonts/helvetica-neue-bold.woff2') format('woff2'), url('../fonts/helvetica-neue-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'helvetica-neue-light';
+  src: url('../fonts/helvetica-neue-light.woff2') format('woff2'), url('../fonts/helvetica-neue-light.woff') format('woff');
+}
+@font-face {
+  font-family: 'helvetica-neue-regular';
+  src: url('../fonts/helvetica-neue-regular.woff2') format('woff2'), url('../fonts/helvetica-neue-regular.woff') format('woff');
+}
+
+@mixin fontawesome() {
+  font-family: fontawesome;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin georgia-bold() {
+  font-family: georgia-bold;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin helvetica-neue-bold() {
+  font-family: helvetica-neue-bold;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin helvetica-neue-light() {
+  font-family: helvetica-neue-light;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin helvetica-neue-regular() {
+  font-family: helvetica-neue-regular;
+  font-weight: normal;
+  font-style: normal;
+}
