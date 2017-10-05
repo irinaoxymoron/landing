@@ -39,5 +39,7 @@
     "rimraf": "^2.6.2",
     "yargs": "^9.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
 }

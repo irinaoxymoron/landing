@@ -63,7 +63,7 @@ gulp.task('moveImg', function () {
 gulp.task('moveFonts', function () {
     return gulp.src(app_dir + '/fonts/**.*')
         .pipe(gulp.dest(wp_dir + '/fonts'));
-})
+});
 
 
 gulp.task('watch', function () {
@@ -80,6 +80,6 @@ gulp.task('rebase', gulp.series(
     'moveJs',
     'sass',
     'moveFonts'
-))
+));
 
 gulp.task('default', gulp.series('rebase', gulp.parallel('browser-sync', 'watch')));
