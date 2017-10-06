@@ -68,10 +68,11 @@ h3,
 h4,
 h5,
 h6{
-  color: $h-color;
+  color: $color;
   @include helvetica-neue-bold();
 }
 h1{
+  color: $h-color;
   font-size: 24px;
   font-weight: normal;
   line-height: 28px;
@@ -79,6 +80,7 @@ h1{
 }
 
 h2{
+  color: #000;
   font-size: 20px;
   line-height: 25px;
   margin-bottom: 0;
@@ -86,10 +88,10 @@ h2{
 }
 
 h3{
-  font-size: rem(30px);
-  line-height: rem(32px);
+  font-size: 18px;
+  line-height: 20px;
   margin-bottom: 0;
-  padding-bottom: rem(17px);
+  padding-bottom: 5px;
 }
 
 h4{
