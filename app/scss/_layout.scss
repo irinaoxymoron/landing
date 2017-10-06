@@ -1,5 +1,5 @@
 body{
-  @include helvetica-neue-bold();
+  @include helvetica-neue-regular();
   font-size: $font-size;
   line-height: $line-height;
   color: $color;
@@ -30,7 +30,6 @@ main{
 
 .header{
   font-size: 17px;
-  background-color: $color-top;
   position: relative;
   .row{
     height: 100%;
@@ -126,7 +125,7 @@ h6{
 
 .container{
   height: 100%;
-  max-width: 90%;
+  max-width: 1024px;
   padding-right: $gap;
   padding-left: $gap;
   width: 90%;
