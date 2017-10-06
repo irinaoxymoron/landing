@@ -44,11 +44,13 @@
     position: relative;
 
     &:after {
+      position: absolute;
+      @include center();
       content: '';
       bottom: -16px;
       width: 47px;
       height: 5px;
-      color: #000;
+      background: $color;
     }
   }
 }
