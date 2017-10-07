@@ -2,11 +2,12 @@
 
 ## Before starting the project:
 
-> node -v
-> npm -v
-> npm install gulpjs/gulp-cli#4.0 -g
+* node -v
+* npm -v
 
 ## To start a project:
 
-> git clone https://github.com/sergeyamator/itvdn-landing.git
-> npm install
+* git clone https://github.com/irinaoxymoron/landing.git
+* npm init
+* npm install gulpjs/gulp#4.0 --save-dev
+* npm install gulp-sass gulp-sourcemaps gulp-newer gulp-csso gulp-postcss autoprefixer gulp-watch gulp-if gulp-uglify gulp-browserify gulp-babel babel-core gulp-file-include browser-sync yargs --save-dev

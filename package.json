@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/irinaoxymoron/landing#readme",
   "devDependencies": {
-    "autoprefixer": "^7.1.4",
+    "autoprefixer": "^7.1.5",
     "babel-core": "^6.26.0",
     "browser-sync": "^2.18.13",
     "gulp": "github:gulpjs/gulp#4.0",
