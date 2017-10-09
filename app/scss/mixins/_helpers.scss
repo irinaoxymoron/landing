@@ -15,6 +15,12 @@
   transform: translate(-50%);
 }
 
+@mixin center-y(){
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
 /*
   Правильный способ скрывать любые элементы вместо display:none;
 */
