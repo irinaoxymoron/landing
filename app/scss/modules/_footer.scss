@@ -2,25 +2,25 @@
   &__top {
     padding: 88px 0 83px;
     text-align: center;
-    background: #2a2a2a;
+    background: $bg-footer-color;
   }
   
   &__bottom {
     padding: 26px;
     text-align: center;
-    background: #515151;
+    background: $footer-color;
   }
 
   &__title {
     margin-bottom: 20px;
     font-size: 1.8125rem;
-    color: #fff;
+    color: $h-color;
     @include helvetica-neue-bold();
   }
 
   &__links {
     margin-bottom: 35px;
-    color: #fff;
+    color: $h-color;
   }
 
   &__social {
@@ -32,13 +32,13 @@
     }
 
     .fa {
-      color: #fff;
-      border: 1px solid #515151;
+      color: $h-color;
+      border: 1px solid $footer-color;
       padding: 15px;
       border-radius: 3px;
 
       &:hover {
-        border: 1px solid #de2b24;
+        border: 1px solid $red-color;
       }
     }
   }
@@ -47,7 +47,7 @@
     @include helvetica-neue-light();
     margin-bottom: 30px;
     font-size: 0.875rem;
-    color: #cecece;
+    color: $grey-color;
   }
 
   &__field {
@@ -59,9 +59,9 @@
     width: 100%;
     padding: 20px;
     font-size: 0.875rem;
-    border: 1px solid #515151;
-    color: #cecece;
-    background: #515151;
+    border: 1px solid $footer-color;
+    color: $grey-color;
+    background: $footer-color;
 
     &:focus {
       border: 1px solid #1287bf;
@@ -69,22 +69,22 @@
   }
 
   .button {
-    border: 2px solid #515151;
+    border: 2px solid $footer-color;
     padding: 15px 37px;
     box-sizing: border-box;
     font-size: 1.0625rem;
     @include helvetica-neue-bold();
     background-color: initial;
-    color: #fff;
+    color: $h-color;
 
     &:hover {
-      border: 2px solid #de2b24;
+      border: 2px solid $red-color;
     }
   }
 
   &__copy {
     @include helvetica-neue-light();
     font-size: 0.875rem;
-    color: #cecece;
+    color: $grey-color;
   }
 }
