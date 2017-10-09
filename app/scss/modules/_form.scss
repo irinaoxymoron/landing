@@ -38,6 +38,10 @@
   }
 }
 
+.is-hidden, .visually-hidden {
+  @include invisible();
+}
+
 .form {
   position: relative;
   width: 67%;
