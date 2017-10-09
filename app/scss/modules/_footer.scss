@@ -44,6 +44,7 @@
   }
 
   &__text {
+    @include helvetica-neue-light();
     margin-bottom: 30px;
     font-size: 0.875rem;
     color: #cecece;
@@ -82,6 +83,7 @@
   }
 
   &__copy {
+    @include helvetica-neue-light();
     font-size: 0.875rem;
     color: #cecece;
   }

@@ -1,21 +1,15 @@
-$color-top: #47264A; // шапка и подвал 1
-$color-top-gray: #495058; // шапка и подвал 2
+$color-top: #f0f2f4; // header__top
+$color-top-gray: #e2e2e2; // border-bottom header
+$color: #424242; // main text color
+$h-color: #fff; // title color
+$text-color: #5c5c5c; // p color
+$bg-color: #f3f3f3; // approach-bg color
+$red-color: #de2b24; // red color
+
 $font-size: 16px;
-$line-height: 24px;
-$color: #424242; // цвет текста
-$h-color: #fff; // Цвет заголовков
-$bg-color: #274094;
-$title-color: #212121;
+$line-height: 19px;
 
-$hover-link: #e8b607;
-
-$kn-color: #1b82d8;
-$active-color-pp: #6e7781;
-$pp-color: #d14424;
-
-$green-color: #00b83c; //
-
-$gap: 16px;
+$gap: 10px;
 
 $img-box-shadow: 0 2px 5px 1px rgba(95, 89, 82, .1);
 $img-border-radius: 2px;

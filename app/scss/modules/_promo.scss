@@ -1,19 +1,20 @@
 .hero {
-  min-height: 59px;
+  min-height: 590px;
   padding: 174px 0;
   text-align: center;
-  color: #fff;
+  color: $h-color;
   background: #ccc url("../../img/hero-bg.jpg") center/cover no-repeat;
   @include helvetica-neue-bold();
 
   &__about {
     font-size: 3rem;
-    line-height: 1;
+    line-height: 1.1;
   }
 
   &__title {
     margin-bottom: 27px;
     @include helvetica-neue-light();
+    font-weight: bold;
   }
 
 }

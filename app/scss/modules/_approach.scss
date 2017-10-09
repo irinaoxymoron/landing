@@ -1,6 +1,6 @@
 .approach {
   padding: 86px 0 94px;
-  background-color: #f3f3f3;
+  background-color: $bg-color;
 
   &__list {
     counter-reset: count;
@@ -10,7 +10,7 @@
     margin-bottom: 40px;
     border-radius: 5px;
     box-shadow: -1px -1px 10px 1px rgba(214, 214, 214, 1);
-    background: #fff;
+    background: $h-color;
 
     &:nth-child(2n) {
       display: flex;
@@ -57,10 +57,10 @@
     height: 103px;
     padding-top: 10px;
     border-radius: 5px;
-    border: 2px solid #fff;
+    border: 2px solid $h-color;
     text-align: center;
     font-size: 1.25rem;
-    background-color: #de2b24;
+    background-color: $red-color;
     color: #fff;
 
     &:before {

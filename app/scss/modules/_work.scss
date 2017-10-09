@@ -1,10 +1,11 @@
 .work {
+  @include helvetica-neue-light();
   padding: 110px 0;
-  background-color: #de2b24;
-  color: #fff;
+  background-color: $red-color;
+  color: $h-color;
   
-  &__title {
-    color: #fff;
+  &__title, .title__text {
+    color: $h-color;
   }
 
   &__list {
@@ -15,15 +16,15 @@
 
   .title--with-bottom-line {
     &:after {
-      background: #fff;
+      background: $h-color;
     }
   }
 
   &__item {
-    width: 248px;
-    height: 248px;
+    width: 256px;
+    height: 256px;
     font-weight: bold;
-    color: #fff;
+    color: $h-color;
     background: #f35e59;
 
     &--name {
@@ -42,6 +43,7 @@
 
   &__name {
     font-size: 1.625rem;
+    line-height: 1.2;
   }
 
   &__picture {
