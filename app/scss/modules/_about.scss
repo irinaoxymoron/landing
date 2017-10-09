@@ -25,32 +25,18 @@
   }
 }
 
-.title {
-  margin-bottom: 65px;
-  text-align: center;
+.icon {
+  margin: auto auto 23px auto;
+}
 
-  &__header {
-    margin: 0;
-    font-size: 2.25rem;
-    line-height: 1;
-  }
+.icon-like {
+  @include sprite ($like);
+}
 
-  &__text {
-    font-size: 1.25rem;
-    @include helvetica-neue-light();
-  }
+.icon-book {
+  @include sprite ($book);
+}
 
-  &--with-bottom-line {
-    position: relative;
-
-    &:after {
-      position: absolute;
-      @include center();
-      content: '';
-      bottom: -16px;
-      width: 47px;
-      height: 5px;
-      background: $color;
-    }
-  }
+.icon-message {
+  @include sprite ($message);
 }

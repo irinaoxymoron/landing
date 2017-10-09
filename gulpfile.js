@@ -15,6 +15,7 @@ var gulp = require('gulp'),
     fileinclude = require('gulp-file-include'),
     browserSync = require('browser-sync').create(),
     argv = require('yargs').argv,
+    spritesmith = require('gulp.spritesmith'),
     prod = argv.prod; // минификация
 
 
@@ -48,11 +49,25 @@ gulp.task('moveJs', function () {
         .pipe(gulpif(Boolean(prod), uglify()))
         .pipe(gulp.dest(wp_dir + '/js'));
 });
+
 /*   pipe(pagebuilder(app_dir))         */
 gulp.task('moveHtml', function () {
     return gulp.src(app_dir + '/*.html')
         .pipe(fileinclude())
         .pipe(gulp.dest(wp_dir));
+});
+
+/*   Sprite   */
+gulp.task('sprite', function(cb) {
+    const spriteData = gulp.src('app/img/icons/*.png').pipe(spritesmith({
+        imgName: 'sprite.png',
+        imgPath: '../../img/sprite.png',
+        cssName: '_sprite.scss'
+    }));
+
+    spriteData.img.pipe(gulp.dest('app/img/'));
+    spriteData.css.pipe(gulp.dest('app/scss/modules/'));
+    cb();
 });
 
 gulp.task('moveImg', function () {
