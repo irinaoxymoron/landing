@@ -120,5 +120,14 @@
     &:last-child:after {
       display: none;
     }
+
+    @media (max-width: 530px) {
+      display: block;
+      text-align: center;
+
+      &:after {
+        display: none;
+      }
+    }
   }
 }
