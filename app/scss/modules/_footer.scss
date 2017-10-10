@@ -3,6 +3,10 @@
     padding: 88px 0 83px;
     text-align: center;
     background: $bg-footer-color;
+
+    @media (max-width: 985px) {
+      padding: 40px 0;
+    }
   }
   
   &__bottom {

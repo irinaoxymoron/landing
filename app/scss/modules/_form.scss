@@ -3,6 +3,10 @@
   color: #fff;
   background-color: #1287bf;
 
+  @media (max-width: 985px) {
+    padding: 40px 0;
+  }
+
   .form__title, .title__text {
     color: #fff;
   }

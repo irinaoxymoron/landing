@@ -3,6 +3,10 @@
   padding: 110px 0;
   background-color: $red-color;
   color: $h-color;
+
+  @media (max-width: 985px) {
+    padding: 40px 0;
+  }
   
   &__title, .title__text {
     color: $h-color;

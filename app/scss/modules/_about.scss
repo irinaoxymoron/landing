@@ -2,6 +2,11 @@
   padding: 102px 0 105px 0;
   text-align: center;
 
+  @media (max-width: 985px) {
+    padding: 40px 0;
+  }
+
+
   &__list {
     display: flex;
     justify-content: space-between;
