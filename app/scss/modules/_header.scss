@@ -42,6 +42,11 @@
     margin-right: 8px;
     padding-right: 18px;
     border-right: 1px solid $color-top-gray;
+
+    @media (max-width: 380px) {
+      border-right: none;
+      padding-right: 0;
+    }
   }
 
   &__icon {
@@ -82,7 +87,7 @@
   margin-left: 165px;
   vertical-align: top;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1045px) {
     margin-left: 100px;
   }
 

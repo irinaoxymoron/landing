@@ -10,45 +10,9 @@ section{
   width: 100%;
 }
 
-section.main,
-article.main,
-aside.main{
-  padding-top: 50px;
-}
-
-.article-main{
-  padding-bottom: 30px;
-}
-
-.header{
-  position: relative;
-  .row{
-    height: 100%;
-  }
-}
-
-.main-content {
-  display: flex;
-  flex-direction: column;
-
-
-  @include for-tablet-landscape-up {
-    margin: 0;
-  }
-
-  @include for-desktop-up {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-
-}
-
 .wrapp {
   padding: 0;
 }
-
-
 
 /** H1-H6 ***/
 h1,
@@ -63,8 +27,7 @@ h6{
 h1{
   color: $h-color;
   font-size: 2rem;
-  font-weight: normal;
-  line-height: 34px;
+  line-height: 2.4rem;
   margin-bottom: 0;
 }
 
@@ -77,10 +40,9 @@ h2{
 }
 
 h3{
-  font-size: 18px;
-  line-height: 25px;
-  margin-bottom: 0;
-  padding-bottom: 5px;
+  font-size: rem(24px);
+  line-height: rem(28px);
+  margin-bottom: rem(20px);
 }
 
 h4{
@@ -103,19 +65,11 @@ h6{
 
 .container{
   height: 100%;
-  max-width: 1044px;
+  max-width: 1064px;
   margin-right: auto;
   margin-left: auto;
   padding-left: $gap;
   padding-right: $gap;
-
-  @include for-desktop-up {
-    //max-width: 100%;
-  }
-}
-
-.container-content {
-
 }
 
 /********** FORM *********/
@@ -191,60 +145,4 @@ textarea:focus:-moz-placeholder{
 textarea:focus:-ms-input-placeholder{
   opacity: 0;
   transition: opacity .3s ease;
-}
-
-.sidebar-block-gray{
-  background-color: #f2f2f2;
-  border: 1px solid #e4e6ea;
-  margin-top: $gap;
-  margin-bottom: $gap;
-  padding: 17px 23px 17px 23px;
-  border-radius: 3px;
-}
-
-.sidebar-block{
-  padding: 0 23px 0 23px;
-  margin-top: $gap;
-  margin-bottom: $gap;
-}
-hr{
-  max-width: 1108px;
-  margin-top: 25px;
-  margin-bottom: 28px;
-  border: none;
-  color: #dadada;
-  height: 1px;
-  background-color: #dadada;
-}
-
-.left-sidebar .sidebar {
-  width: 20%;
-  padding: 20px;
-  order: 1;
-
-  @include for-tablet-landscape-up {
-    order: 0;
-  }
-}
-
-.right-sidebar .sidebar {
-  width: 20%;
-  padding: 20px;
-  order: 1;
-}
-
-.both-sidebar .sidebar {
-  width: 20%;
-  padding: 20px;
-  order: 1;
-
-  @include for-tablet-landscape-up {
-    order: 0;
-  }
-}
-
-.both-sidebar .sidebar-second {
-  width: 20%;
-  padding: 20px;
-  order: 2;
 }

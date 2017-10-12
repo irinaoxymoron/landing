@@ -9,12 +9,20 @@
   &__about {
     font-size: 3rem;
     line-height: 1.1;
+
+    @media (max-width: 380px) {
+      font-size: 2rem;
+    }
   }
 
   &__title {
     margin-bottom: 27px;
     @include helvetica-neue-light();
     font-weight: bold;
+
+    @media (max-width: 380px) {
+      font-size: 1.6rem;
+    }
   }
 
   @media (max-width: 599px) {

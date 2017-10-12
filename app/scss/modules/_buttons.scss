@@ -28,6 +28,10 @@
     &:hover {
       background: lighten(#f8cd53, 7%);
     }
+
+    @media (max-width: 380px) {
+      font-size: 1rem;
+    }
   }
 
   &--uppercase {
