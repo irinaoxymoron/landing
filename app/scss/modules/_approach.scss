@@ -107,7 +107,7 @@
     }
 
     @media (max-width: 985px) {
-      @include invisible();
+      display: none;
     }
   }
 
