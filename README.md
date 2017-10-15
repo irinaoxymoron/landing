@@ -2,8 +2,8 @@
 
 ## Before starting the project:
 
-* node -v
-* npm -v
+> node -v
+> npm -v
 
 ## To start a project:
 
