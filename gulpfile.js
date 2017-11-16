@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     newer = require('gulp-newer'),
     csso = require('gulp-csso'), // минификатор CSS
+    cleanCSS = require('gulp-clean-css'),
     postcss = require('gulp-postcss'), // npm install --save-dev gulp-postcss
     autoprefixer = require('autoprefixer'), // npm install autoprefixer --save-dev
     watch = require('gulp-watch'),
@@ -37,6 +38,7 @@ gulp.task('sass', function () {
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss([autoprefixer({browsers: ['last 5 versions']})]))
         .pipe(gulpif(Boolean(prod), csso()))
+        .pipe(cleanCSS())
         .pipe(gulpif(!Boolean(prod), sourcemaps.write()))
         .pipe(gulp.dest(wp_dir + '/css'));
 });
